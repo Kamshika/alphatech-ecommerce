@@ -75,24 +75,24 @@ if(!isset($_SESSION["cusername"]))
                 <th class="shopping-cart-heading">Edit</th>
               </tr>
               <tr class="shopping-cart-row">
-                <td class="shopping-cart-item">Double Flair Short Dress</td>
-                <td class="shopping-cart-item center">LKR 2190</td>
+                <td class="shopping-cart-item">Apple iPhone 14 Pro Max 1TB</td>
+                <td class="shopping-cart-item center">LKR 810926</td>
                 <td class="shopping-cart-item center">1</td>
-                <td class="shopping-cart-item center">LKR 2190</td>
+                <td class="shopping-cart-item center">LKR 810926</td>
                 <td class="shopping-cart-item center"><img class="delete-item" src="resources/images/delete.png"></td>
               </tr>
               <tr class="shopping-cart-row">
-                <td class="shopping-cart-item">Double Flair Short Dress</td>
-                <td class="shopping-cart-item center">LKR 2190</td>
+                <td class="shopping-cart-item">Apple iPhone 14 Pro Max 1TB</td>
+                <td class="shopping-cart-item center">LKR 810926</td>
                 <td class="shopping-cart-item center">1</td>
-                <td class="shopping-cart-item center">LKR 2190</td>
+                <td class="shopping-cart-item center">LKR 810926</td>
                 <td class="shopping-cart-item center"><img class="delete-item" src="resources/images/delete.png"></td>
               </tr>
               <tr class="shopping-cart-row">
-                <td class="shopping-cart-item">Double Flair Short Dress</td>
-                <td class="shopping-cart-item center">LKR 2190</td>
+                <td class="shopping-cart-item">Apple iPhone 14 Pro Max 1TB</td>
+                <td class="shopping-cart-item center">LKR 810926</td>
                 <td class="shopping-cart-item center">1</td>
-                <td class="shopping-cart-item center">LKR 2190</td>
+                <td class="shopping-cart-item center">LKR 810926</td>
                 <td class="shopping-cart-item center"><img class="delete-item" src="resources/images/delete.png"></td>
               </tr>
             </table>

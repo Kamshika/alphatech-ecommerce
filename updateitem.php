@@ -15,14 +15,14 @@ if(!isset($_SESSION["ausername"]))
 <body>
 	<div class="header_login">
 		<div class="header content">
-			<div class="logo"><a class="logo-link" href="https://localhost/vivo/index.php">VIVO</a></div>
+			<div class="logo"><a class="logo-link" href="https://localhost/alpha-tech/index.php">alphaTech</a></div>
 			<div class="menu">
 				<ul class="menu-list">
 					<li class="menu-item"><a class="menu-item-link" href=""></a></li>
-					<li class="menu-item"><a class="menu-item-link" href="https://localhost/vivo/manage-products.php"><u>Manage Products</u></a></li>
-					<li class="menu-item"><a class="menu-item-link" href="https://localhost/vivo/manage-users.php">Manage Users</a></li>
-					<li class="menu-item"><a class="menu-item-link" href="https://localhost/vivo/manage-faq.php">Manage FAQ</a></li>
-					<li class="menu-item"><a class="menu-item-link" href="https://localhost/vivo/admin-logout.php">Log Out</a></li>
+					<li class="menu-item"><a class="menu-item-link" href="https://localhost/alpha-tech/manage-products.php"><u>Manage Products</u></a></li>
+					<li class="menu-item"><a class="menu-item-link" href="https://localhost/alpha-tech/manage-users.php">Manage Users</a></li>
+					<li class="menu-item"><a class="menu-item-link" href="https://localhost/alpha-tech/manage-faq.php">Manage FAQ</a></li>
+					<li class="menu-item"><a class="menu-item-link" href="https://localhost/alpha-tech/admin-logout.php">Log Out</a></li>
 				</ul>
 			</div>
 		</div>

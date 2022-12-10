@@ -18,7 +18,7 @@ if (!isset($_SESSION["ausername"])) {
 <body>
 	<div class="header_login">
 		<div class="header content">
-			<div class="logo"><a class="logo-link" href="index.php">VIVO</a></div>
+			<div class="logo"><a class="logo-link" href="index.php">alphaTech</a></div>
 			<div class="menu">
 				<ul class="menu-list">
 					<li class="menu-item"><a class="menu-item-link" href=""></a></li>
@@ -54,11 +54,11 @@ if (!isset($_SESSION["ausername"])) {
 				</tr>
 				<tr>
 					<td class="updateitem-td right" width="50%" height="43">Category</td>
-					<td class="updateitem-td">Shirt<input type="checkbox" name="chkShirt" id="chkShirt" />
-						Pant<input type="checkbox" name="chkPant" id="chkPant" />
-						Blouse<input type="checkbox" name="chkBlouse" id="chkBlouse" />
-						Skirt<input type="checkbox" name="chkSkirt" id="chkSkirt" />
-						Accessories<input type="checkbox" name="chkAccessories" id="chkAccessories" />
+					<td class="updateitem-td">Samsung<input type="checkbox" name="samsung" id="chkShirt" />
+						Apple<input type="checkbox" name="apple" id="chkPant" />
+						onePlus<input type="checkbox" name="oneplus" id="chkBlouse" />
+						Vivo<input type="checkbox" name="vivo" id="chkSkirt" />
+						Huawei<input type="checkbox" name="huawei" id="chkAccessories" />
 					</td>
 				</tr>
 				<tr>
@@ -76,20 +76,20 @@ if (!isset($_SESSION["ausername"])) {
 							$price = $_POST["pprice"];
 							$stock = $_POST["pstock"];
 
-							if (isset($_POST["chkShirt"])) {
-								$category = "Shirt";
+							if (isset($_POST["samsung"])) {
+								$category = "samsung";
 							}
-							if (isset($_POST["chkPant"])) {
-								$category = "Pant";
+							if (isset($_POST["apple"])) {
+								$category = "apple";
 							}
-							if (isset($_POST["chkBlouse"])) {
-								$category = "Blouse";
+							if (isset($_POST["oneplus"])) {
+								$category = "oneplus";
 							}
-							if (isset($_POST["chkSkirt"])) {
-								$category = "Skirt";
+							if (isset($_POST["vivo"])) {
+								$category = "vivo";
 							}
-							if (isset($_POST["chkAccessories"])) {
-								$category = "Accessories";
+							if (isset($_POST["huawei"])) {
+								$category = "huawei";
 							}
 
 							$con = mysqli_connect("localhost", "root", "", "vivo");

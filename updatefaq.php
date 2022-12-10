@@ -15,7 +15,7 @@ if(!isset($_SESSION["ausername"]))
   <body>
     <div class="header_login">
 			<div class="header content">
-        <div class="logo"><a class="logo-link" href="index.php">VIVO</a></div>
+        <div class="logo"><a class="logo-link" href="index.php">alphaTech</a></div>
         <div class="menu">
           <ul class="menu-list">
             <li class="menu-item"><a class="menu-item-link" href=""></a></li>

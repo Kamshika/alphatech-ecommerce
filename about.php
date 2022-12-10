@@ -1,22 +1,23 @@
 <html lang="en">
+
 <head>
-    <?php include "imports.php"; ?>
-    <title>About</title>
-    <style>
+  <?php include "imports.php"; ?>
+  <title>About</title>
+  <style>
     .footer {
-	     position: relative !important;
-	     margin-top: 93em !important;
-      }
-    </style>
+      position: relative !important;
+      margin-top: 93em !important;
+    }
+  </style>
 </head>
+
 <body>
   <?php session_start();
 
-  if(!isset($_SESSION["cusername"]))
-  {
-  	  include "header-logged-out.php";
-  }else {
-      include "header-logged-in.php";
+  if (!isset($_SESSION["cusername"])) {
+    include "header-logged-out.php";
+  } else {
+    include "header-logged-in.php";
   }
   ?>
 
@@ -26,10 +27,13 @@
       <div class="about-company">
         <p class="about-heading">About Company</p>
         <p class="about-para">
-          VIVO Clothing is a new generation basics clothing company based in Sri Lanka. We’re all about convenience and peace-of-mind. We offer high quality everyday wear that bring you the comfort and convenience you need to get through your day.<br><br>
-          VIVO Clothing was born out of the need for a convenient solution to shop for basics. The founders have been looking for a “set-it-and-forget-it” service to shop clothing, and when they couldn’t find one, they resolved to build the service they wanted.<br><br>
-          We understand that your time is valuable and we don’t want you to waste any of it looking for the perfect basics to wear. Shopping on our website is as easy as it gets. Our team is only a click away and are dedicated to serve you from the moment you log in and even after your order arrives at your doorstep. We make no compromises on convenience.<br><br>
-          All our products are made in Sri Lanka with high-quality material. Production is carried out by experienced suppliers in the industry who are specialized in each type of garment. Our promise of quality doesn’t just stop at the product, we work hard to exceed your expectations with our level or service.<br><br>
+          alphaTech pvt Ltd is one of the leading electronics distributors in Sri Lanka that has grown from strength to strength since its establishment.
+          Incorporated in 2003, the company started with humble beginnings but with sound knowledge on the mobile phone sphere and strong leadership skills, Celltronics today is recognised as a strong competitor in the electronics market, having started with offering mobile phones, and later accessories.
+          Celltronics is a licenced importer and distributor of electronics and has a plethora of offerings in its portfolio.<br><br>
+          While in its product range are top brands, Celltronics keeps abreast with new technological developments and strives to introduce the same to the local market at its earliest.
+          With the objective of making technology accessible to as many as possible, Celltronics makes available its products at affordable rates, ensuring a greater proportion of the population can reap the benefits of the latest technology available.
+          A key priority for Celltronics is the affordability factor, and the same is achieved without compromising quality. All imported products are of the highest standard.
+          To ensure its business is in line with the current times, Celltronics continues to invest time and resources to conceptualise ways in which it can provide the very best, latest technology, for the right price.
         </p>
       </div>
       <div class="about-t&c">
@@ -51,26 +55,22 @@
       <div class="about-faq">
         <?php
 
-$con = mysqli_connect("localhost","root","","vivo");
-if(!$con)
-{
-die("Cannot connect to DB server");
-}
-$sql ="SELECT * FROM `faq`";
+        $con = mysqli_connect("localhost", "root", "", "vivo");
+        if (!$con) {
+          die("Cannot connect to DB server");
+        }
+        $sql = "SELECT * FROM `faq`";
 
-$result = mysqli_query($con,$sql);
+        $result = mysqli_query($con, $sql);
 
-if(mysqli_num_rows($result)> 0)
-{
-echo "<p class='about-heading'>Frequently Asked Questions</p>";
-while($row = mysqli_fetch_assoc($result))
-{
-  echo"<p class='about-subheading'>".$row["fq"]."</p>";
-  echo"<p class='about-para center'>".$row["fa"]."</p>";
-
-}
-}
-?>
+        if (mysqli_num_rows($result) > 0) {
+          echo "<p class='about-heading'>Frequently Asked Questions</p>";
+          while ($row = mysqli_fetch_assoc($result)) {
+            echo "<p class='about-subheading'>" . $row["fq"] . "</p>";
+            echo "<p class='about-para center'>" . $row["fa"] . "</p>";
+          }
+        }
+        ?>
 
 
       </div>
@@ -78,4 +78,5 @@ while($row = mysqli_fetch_assoc($result))
   </div>
   <?php require "footer.php"; ?>
 </body>
+
 </html>
